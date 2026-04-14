@@ -52,3 +52,24 @@ DROP Database päringud;
 --tabelirida kustutamine
 select * from opilane;
 DELETE FROM opilane WHERE opilaneId=4;
+
+CREATE TABLE opetaja(
+opetajaId int PRIMARY KEY IDENTITY(1,1),
+nimi varchar(25),
+ruum varchar(25),)
+
+INSERT INTO opetaja
+VALUES ('Nimi', 213);
+
+CREATE TABLE opetamine(
+opetamineId int PRIMARY KEY IDENTITY(1,1),
+opetajaId int,
+Foreign Key (opetajaId) References opetaja(opetajaId),
+oppeaine varchar(25),
+maht int)
+
+INSERT INTO opetamine
+VALUES (1,'Matemaatika', 15);
+
+Select * from opilane;
+Select * from opetamine;

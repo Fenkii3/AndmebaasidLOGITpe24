@@ -62,5 +62,17 @@ BEGIN
 END
 --kutse
 EXEC lisaKategooria 'test';
+
+--protseduur, mis kustutab tabelist id järgi
+CREATE PROCEDURE kustutaIdJargi
+@id int
+AS
+BEGIN
+	SELECT * FROM categories;
+	DELETE FROM categories WHERE category_id=@id;
+	SELECT * FROM categories;
+END
+--kutse
+EXEC kustutaIdJargi 6;
 ```
 

@@ -74,5 +74,33 @@ BEGIN
 END
 --kutse
 EXEC kustutaIdJargi 6;
+
+--otsing 
+--protseduur mis otsib kõik kategooriad sisestatud 1 tähte järgi
+CREATE PROCEDURE otsing1taht
+@taht char(1)
+AS
+BEGIN
+	SELECT category_name FROM categories
+	WHERE category_name like @taht + '%';
+END
+--kutse
+SELECT * FROM categories
+EXEC otsing1taht 's';
+
+--protseduur, mis uuendab nimed sisestatud id järgi
+CREATE PROCEDURE uuendaKategooria
+@id int,
+@uuendatudNimi varchar(20)
+AS
+BEGIN
+	SELECT * FROM categories;
+	UPDATE categories SET category_name=@uuendatudNimi
+	WHERE category_id=@id;
+	SELECT * FROM categories;
+END
+--kutse
+EXEC uuendaKategooria 5, 'Jope'
+
 ```
 

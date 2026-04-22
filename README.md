@@ -103,4 +103,5 @@ END
 EXEC uuendaKategooria 5, 'Jope'
 
 ```
+<img width="815" height="455" alt="{FD68081C-008A-435F-B81B-B0A9C396133D}" src="https://github.com/user-attachments/assets/80476957-b620-4c37-b22d-937c9712881f" />
 

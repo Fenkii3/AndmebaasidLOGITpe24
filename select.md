@@ -130,6 +130,36 @@ ORDER by hind DESC;
 ```
 <img width="333" height="478" alt="{0A7AEACC-E27F-43E7-A8FD-FAAD12C766FF}" src="https://github.com/user-attachments/assets/d256f819-697e-4774-a202-cbb824a181e3" />
 
+```
+--mark sisaldab c täht
+Select mark FROM auto
+WHERE mark LIKE '%C%';
+
+--hind on vahemikus 500 kuni 800 euro
+Select mark, autonumber, hind
+From auto
+Where hind > 500 AND hind < 800;
+-- teine variant
+Select mark, autonumber, hind
+From auto
+Where hind between 500 AND 800;
+
+--kombineeritud tingimused (AND, OR , NOT)
+Select mark, autonumber, hind
+FROM auto
+WHERE mark NOT LIKE 'Pontiac' OR hind <=100000
+
+--vaade loomine - VIEW
+CREATE VIEW pontiacAutod
+AS
+Select mark, autonumber, hind
+FROM auto
+WHERE mark LIKE 'Pontiac';
+
+--view kasutamine
+Select * from pontiacAutod;
+
+```
 
 <img width="350" height="482" alt="{2E67B5D9-8DB9-4799-BA4F-8E935DA0C61C}" src="https://github.com/user-attachments/assets/f80a15d9-cb00-4d3e-a350-e62c5e33f7c8" />
 

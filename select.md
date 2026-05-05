@@ -131,4 +131,3 @@ ORDER by hind DESC;
 <img width="333" height="478" alt="{0A7AEACC-E27F-43E7-A8FD-FAAD12C766FF}" src="https://github.com/user-
 attachments/assets/49f6d210-173a-42d9-aaf8-46df9380a9de" />
 
-```

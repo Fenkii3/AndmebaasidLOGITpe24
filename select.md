@@ -165,6 +165,22 @@ Select * from pontiacAutod;
 
 <img width="426" height="464" alt="{450E9CBB-EAF3-4D6A-B6A2-5911A8C21BE7}" src="https://github.com/user-attachments/assets/6b6e4801-6eac-4e43-bb7e-3f4dc661fa3b" />
 
+```
+--Agregaatfunktsioonid - SUM, MAX, MING, AVG, COUNT - KOGUS
+
+-- Leia mitu autot on tabelis
+SELECT COUNT(*) AS autodeArv FROM auto;
+
+--Leia keskmine autohind
+SELECT AVG(hind) AS 'auto Keskmine Hind' FROM auto;
+
+--Leia iga margi kohta keskmine autohind
+SELECT mark, AVG(hind) AS 'auto Keskmine Hind'
+FROM auto
+GROUP by mark;
+
+```
+
 <img width="507" height="217" alt="{81F714D4-0F3B-4B50-992B-DCDAE273F25A}" src="https://github.com/user-attachments/assets/dffb58e3-b352-4715-90f5-863809458a36" />
 
 

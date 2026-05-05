@@ -115,3 +115,20 @@ insert into auto (autonumber, mark, mudel, v_aasta, varv, hind) values ('390Dwi'
 insert into auto (autonumber, mark, mudel, v_aasta, varv, hind) values ('620rlM', 'Kia', 'Rio', 2005, 'Red', '$7817.83');
 insert into auto (autonumber, mark, mudel, v_aasta, varv, hind) values ('124tZm', 'Chevrolet', 'Express 3500', 2001, 'Pink', '$8525.60');
 ```
+
+```
+--Näita kõik
+Select * from auto;
+--Näita ainult mark, mudel ja hind
+Select mark, mudel, hind from auto;
+--tingimused
+--sorteerimine - ORDER by -kasvavalt, DESC - kahanevalt
+Select mark, mudel, hind
+from auto
+ORDER by hind DESC;
+
+```
+<img width="333" height="478" alt="{0A7AEACC-E27F-43E7-A8FD-FAAD12C766FF}" src="https://github.com/user-
+attachments/assets/49f6d210-173a-42d9-aaf8-46df9380a9de" />
+
+```

@@ -30,7 +30,8 @@ Tee paremklikk ja vali:
 
 New Login...
 
->>>>>pilt
+<img width="703" height="660" alt="{BD864038-6C0C-499C-A286-AB2BAD7D3249}" src="https://github.com/user-attachments/assets/cf8ef86c-7933-4518-ad83-0a9ac06e076a" />
+
 Harjutamiseks võib eemaldada linnukese:  User must change password at next login
 Server Roles
 Menüüst Server Roles saab määrata serveri üldised õigused.

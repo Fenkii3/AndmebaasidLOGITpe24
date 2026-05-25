@@ -72,4 +72,72 @@ SELECT * FROM linnad;
 SELECT * FROM logi;
 ```
 <img width="510" height="311" alt="{BCA3B6F3-50E5-4487-8961-EF13C6705C73}" src="https://github.com/user-attachments/assets/afbc9d7e-029f-4d0a-a584-4fdfcfee8c8a" />
+
+```SQL
+--3.UPDATE TRIGGER - Jälgib uuendused/muutused tabelis linnad
+--ja teeb vastava kirje tabelis logi
+
+CREATE TRIGGER linnaUuendamine
+ON linnad -- Tabel, mida triger jälgib
+FOR UPDATE
+AS
+INSERT INTO logi(kasutaja, aeg, andmed)
+SELECT
+SYSTEM_USER,
+GETDATE(),
+CONCAT('Vana andmed:',
+deleted.linnanimi,', ',deleted.maakond,', ', deleted.rahvaarv,
+' ||| uued andmed: ', 
+inserted.linnanimi,', ',inserted.maakond,', ', inserted.rahvaarv)
+FROM deleted INNER JOIN inserted
+ON deleted.linnId=inserted.linnId;
+
+--Kontroll
+UPDATE linnad SET linnanimi='Tallinn22', rahvaarv=70000
+WHERE linnId=1;
+
+SELECT * FROM linnad;
+SELECT * FROM logi;
 ```
+
+<img width="579" height="283" alt="{09279638-F8C6-4F1F-B26D-836E0CC811F6}" src="https://github.com/user-attachments/assets/3922f83b-2d24-46d1-87ca-08fef6c8edbc" />
+
+```sql
+--Ühine triger, mis jälgib kas lisamine või kustutamine tabelisse linnad
+CREATE TRIGGER linnaLisamineKustutamine
+ON linnad -- Tabel, mida triger jälgib
+FOR INSERT, DELETE
+AS
+BEGIN
+SET NOCOUNT ON;
+	INSERT INTO logi(kasutaja, aeg, andmed)
+	SELECT
+	SYSTEM_USER,
+	GETDATE(),
+	CONCAT ('Lisatud:',inserted.linnanimi,', ',
+	inserted.maakond,', ', inserted.rahvaarv)
+	FROM inserted
+
+	UNION ALL
+
+	SELECT
+	SYSTEM_USER,
+	GETDATE(),
+	CONCAT ('Kustutatud:',deleted.linnanimi,', ',
+	deleted.maakond,', ', deleted.rahvaarv)
+	FROM deleted;
+END;
+
+--Kontroll
+DELETE FROM linnad where linnId=3;
+
+INSERT INTO linnad(linnanimi, maakond, rahvaarv)
+VALUES ('Viljandi', 'Viljandimaa', 50000);
+
+
+SELECT * FROM linnad;
+SELECT * FROM logi;
+```
+<img width="571" height="314" alt="{F91A36B1-7E09-44ED-A082-A279BB4E4A02}" src="https://github.com/user-attachments/assets/2497d7f9-0488-472a-8dbf-4ce7bea5be7f" />
+```
+

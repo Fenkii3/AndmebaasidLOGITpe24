@@ -141,12 +141,24 @@ SELECT * FROM logi;
 <img width="571" height="314" alt="{F91A36B1-7E09-44ED-A082-A279BB4E4A02}" src="https://github.com/user-attachments/assets/2497d7f9-0488-472a-8dbf-4ce7bea5be7f" />
 
 ## XAMPP / mariaDB päästikud / trigerid
+### INSERT TRIGER
 
+1. Linna Lisamine päästik
 <img width="540" height="562" alt="{C508A7C5-3EFB-4F96-9945-3CC6F85E8994}" src="https://github.com/user-attachments/assets/1b2f4b19-2555-43c1-bbe9-8498d9c38a5e" />
 
-1. Kontrollimiseks
+2. Kontrollimiseks
 <img width="693" height="203" alt="{D7D5FED7-F298-4736-AC85-DB4001484D6C}" src="https://github.com/user-attachments/assets/406e7f12-336b-4418-8141-117f5066399e" />
 
-2. Tulemus logi tabelist
+3. Tulemus logi tabelist
 <img width="607" height="85" alt="{EB04E0E2-6A86-4C5A-A3D5-4D48E37AAB3F}" src="https://github.com/user-attachments/assets/fdec30a3-a04b-4bf0-9677-545e051c091d" />
+
+### DELETE TRIGER
+<img width="528" height="429" alt="{87E7B2B7-F0B4-4AAF-82C3-4EB030880B5F}" src="https://github.com/user-attachments/assets/bed73f30-a5b6-4e22-8f82-368094c9609e" />
+
+### UPDATE TRIGER
+
+<img width="517" height="452" alt="{25444D7E-E4AB-46E4-945E-7F5890BC5730}" src="https://github.com/user-attachments/assets/ce827492-202c-4101-af30-db660156a297" />
+
+
+
 

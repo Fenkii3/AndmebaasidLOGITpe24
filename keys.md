@@ -95,6 +95,7 @@ nimi VARCHAR(50)
 );
 ```
 Superkey näited: opetaja_id, email, (opetaja_id, nimi).
+
 <img width="604" height="439" alt="image" src="https://github.com/user-attachments/assets/5d759c73-971f-4ef2-85e7-109e9be7f680" />
 
 
@@ -107,6 +108,7 @@ email VARCHAR(100) UNIQUE
 );
 ```
 Candidate Key-d: opetaja_id, email.
+
 <img width="661" height="431" alt="image" src="https://github.com/user-attachments/assets/f3cecf85-2d59-41b5-af03-2558676e70cc" />
 
 
@@ -120,6 +122,7 @@ email VARCHAR(100) UNIQUE
 );
 ```
 Primary Key = opetaja_id, Alternate Key = email
+
 <img width="639" height="474" alt="image" src="https://github.com/user-attachments/assets/a7563b89-3153-47c8-b1e3-f9d651a9de10" />
 
 ```KASUTATUD ALLIKAD:

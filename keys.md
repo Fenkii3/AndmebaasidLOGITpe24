@@ -43,11 +43,47 @@ email VARCHAR(100) UNIQUE );
 <img width="619" height="398" alt="image" src="https://github.com/user-attachments/assets/fc79491e-bca6-498e-9ebf-4a2a16c24f93" />
 
 
-Simple Key -
+Simple Key - See koosneb ainult ühest veerust. Teda kasutatakse lihtsaks kirjete identifitseerimiseks. 
+Ta erineb teistest selle poolest, et ta koosneb ainult ühest veerust.
 
-Composite Key -
+```sql
+Näide:
+CREATE TABLE Tooted (
+toode_id INT PRIMARY KEY,
+nimetus VARCHAR(100) );
 
-Compound Key -
+```
+<img width="553" height="361" alt="image" src="https://github.com/user-attachments/assets/1bbe37dd-58fc-4a48-bc3d-37adaa4ec78f" />
+
+
+Composite Key - Ta koosneb kahest või enamast veerust. Teda kasutatakse selleks kui üks veerg ei taga unikaalsust. 
+Ning ta erineb sellest, et unikaalsus saavutatakse mitme veeru kombinatsiooniga.
+
+```sql
+Näide:
+CREATE TABLE Hinded (
+opilane_id INT,
+aine_id INT,
+hinne INT,
+PRIMARY KEY (opilane_id, aine_id)
+);
+```
+<img width="672" height="424" alt="image" src="https://github.com/user-attachments/assets/6f310e3c-2d9c-4b2b-8715-aaa8bf0dab70" />
+
+
+Compound Key - Ta on composite key eriliik, kus võtme osad võivad siis olla ka foreign key-d. Teda kasutatakse seostabelites ning ta erineb teistest selle poolest, et ta sisaldab tavaliselt viiteid teiste tabelite võtmetele.
+
+```sql
+Näide:
+CREATE TABLE Opilane_Aine (
+opilane_id INT,
+aine_id INT,
+PRIMARY KEY (opilane_id, aine_id),
+FOREIGN KEY (opilane_id) REFERENCES Opilased(opilane_id),
+FOREIGN KEY (aine_id) REFERENCES Ained(aine_id) );
+```
+<img width="856" height="440" alt="image" src="https://github.com/user-attachments/assets/537c993f-e1ad-4c0e-86b3-6feceaf6c944" />
+
 
 Superkey -
 

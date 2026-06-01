@@ -1,3 +1,7 @@
+## KODUTÖÖ
+
+[Select laused](select.md) | [Kasutaja loomine SQL Serveris-is](kasutaja.md) |  [Triggerid](trigerid.md) | [Kodutöö - Keys](keys.md)
+
 Primary Key - Väli või väljade kombinatsioon, mis identifitseerib iga tabeli rea unikaalselt. 
 Teda kasutatakse seoste loomiseks teiste tabelitega. Ta ei tohi sisaldada NULL väärtusi ning tabelis saab olla ainult üks Primary Key.
 

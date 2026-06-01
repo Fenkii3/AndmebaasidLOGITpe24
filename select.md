@@ -1,6 +1,6 @@
 ## SELECT LAUSED SQL
 
-[Select laused](select.md) | [Kasutaja loomine SQL Serveris-is](kasutaja.md) |  [Triggerid](trigerid.md) | [Kodutöö - Keys](keys.md)
+[Select laused](select.md) | [Kasutaja loomine SQL Serveris-is](kasutaja.md) |  [Triggerid](trigerid.md) | [Kodutöö - Keys](keys.md) | [SQL-Protseduurid](protseduur.md) | [SQL-Vaated](vaade.md)
 
 <img width="945" height="551" alt="{205904E3-9B53-4296-A8EF-209E94BCFDFB}" src="https://github.com/user-attachments/assets/c7a755b3-ddda-4a9c-bee4-2f15801a69fa" />
 

@@ -1,5 +1,8 @@
-# AndmebaasidLOGITpe24
+# Andmebaasid Kevin Portfoolio ||| LOGITpe24
+
 Andmebaasidega seotud SQL kood ja konspektid
+
+[Select laused](select.md) | [Kasutaja loomine SQL Serveris-is](kasutaja.md) |  [Triggerid](trigerid.md) | [Kodutöö - Keys](keys.md)
 
 - SQL - Structured Query Language (Struktureeritud päringukeel)
 - DDL - Data Definition Language (Andmebaasi struktuuri loomiseks) - CREATE, ALTER

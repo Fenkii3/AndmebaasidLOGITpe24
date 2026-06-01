@@ -1,5 +1,7 @@
 ## SQL-vaated
 
+[Select laused](select.md) | [Kasutaja loomine SQL Serveris-is](kasutaja.md) |  [Triggerid](trigerid.md) | [Kodutöö - Keys](keys.md) | [SQL-Protseduurid](protseduur.md) | [SQL-Vaated](vaade.md)
+
 SQL-vaade (View) on virtuaalne tabel, mis põhineb ühe või mitme tabeli andmetel. Vaade ei salvesta tavaliselt andmeid eraldi, vaid kuvab päringu tulemust justkui tavalise tabelina.
 
 Vaateid kasutatakse andmete lihtsamaks kuvamiseks, keerukate päringute peitmiseks ning kasutajatele piiratud ligipääsu võimaldamiseks. Vaate abil saab esitada ainult vajalikke veerge või ridu, ilma et kasutajal oleks otsene juurdepääs algsetele tabelitele.

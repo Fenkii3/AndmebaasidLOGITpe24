@@ -2,7 +2,7 @@
 
 Andmebaasidega seotud SQL kood ja konspektid
 
-[Select laused](select.md) | [Kasutaja loomine SQL Serveris-is](kasutaja.md) |  [Triggerid](trigerid.md) | [Kodutöö - Keys](keys.md)
+[Select laused](select.md) | [Kasutaja loomine SQL Serveris-is](kasutaja.md) |  [Triggerid](trigerid.md) | [Kodutöö - Keys](keys.md) | [SQL-Protseduurid](protseduur.md) | [SQL-Vaated](vaade.md)
 
 - SQL - Structured Query Language (Struktureeritud päringukeel)
 - DDL - Data Definition Language (Andmebaasi struktuuri loomiseks) - CREATE, ALTER

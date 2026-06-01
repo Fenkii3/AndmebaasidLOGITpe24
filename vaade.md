@@ -15,14 +15,18 @@ Aitab säilitada andmete loogilist struktuuri.
 
 ```sql
 Näide
-CREATE VIEW KallidTooted AS
-SELECT TooteID, Nimi, Hind
-FROM Tooted
-WHERE Hind > 500;
+CREATE VIEW vw_ITEmployees
+AS
+SELECT
+    EmployeeID,
+    FirstName,
+    LastName,
+    Salary
+FROM Employees
+WHERE Department = 'IT';
+GO
 
-Vaate kasutamine:
-
-SELECT * FROM KallidTooted;
+SELECT * FROM vw_ITEmployees;
 ```
 
-Selles näites luuakse vaade KallidTooted, mis kuvab ainult need tooted, mille hind on suurem kui 500 eurot. Vaadet saab kasutada samamoodi nagu tavalist tabelit.
+<img width="446" height="472" alt="{658F20CE-9F4D-4C9F-9657-8C67B1478F41}" src="https://github.com/user-attachments/assets/86605c0b-308b-431f-879d-06f9476229d8" />

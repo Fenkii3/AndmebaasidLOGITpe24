@@ -14,17 +14,15 @@ Võib parandada päringute jõudlust.
 Võimaldab keerukamat äriloogikat andmebaasi tasemel.
 ```sql
 Näide
-CREATE PROCEDURE LisaToode
-    @Nimi VARCHAR(100),
-    @Hind DECIMAL(10,2)
+CREATE PROCEDURE sp_ShowEmployees
 AS
 BEGIN
-    INSERT INTO Tooted (Nimi, Hind)
-    VALUES (@Nimi, @Hind);
+    SELECT *
+    FROM Employees;
 END;
+GO
 
-Protseduuri käivitamine:
-
-EXEC LisaToode 'Sülearvuti', 999.99;
+EXEC sp_ShowEmployees;
 ```
-Selles näites luuakse protseduur LisaToode, mis lisab tabelisse Tooted uue kirje kasutaja määratud nime ja hinnaga.
+<img width="499" height="406" alt="{B8AF67E7-C64E-42A9-966D-C54282CD3917}" src="https://github.com/user-attachments/assets/0e4ed7c0-f662-4dc1-be7c-a36f1ec403db" />
+
